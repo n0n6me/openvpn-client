@@ -3,8 +3,8 @@ MAINTAINER David Personette <dperson@gmail.com>
 
 # Install openvpn
 RUN apk --no-cache --no-progress upgrade && \
-    apk --no-cache --no-progress add bash curl ip6tables iptables openvpn openssh\
-                shadow tini tzdata && \
+    apk --no-cache --no-progress add bash curl ip6tables iptables openvpn \
+            openssh shadow-login tini tzdata && \
     addgroup -S vpn && \
     rm -rf /tmp/*
 
